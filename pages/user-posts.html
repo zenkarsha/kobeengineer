@@ -1,0 +1,22 @@
+---
+layout: default
+layout: default
+permalink: /me/posts/
+page_title: My posts
+additional_script:
+  - /js/page/user-posts.js
+---
+
+{% include partial/guest-login-block.html %}
+<div class="user-view">
+  <div class="row">
+    <div class="span12">
+      {% include partial/page-header.html %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12">
+      {% include partial/user-posts-table.html %}
+    </div>
+  </div>
+</div>

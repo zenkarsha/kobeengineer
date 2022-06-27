@@ -1,0 +1,78 @@
+.old-school-scroll::-webkit-scrollbar
+body::-webkit-scrollbar
+  width 21px
+  height 21px
+
+.old-school-scroll::-webkit-scrollbar-track
+body::-webkit-scrollbar-track
+  background-image url(/images/old-school-scroll/bg-scrollbar-track.png)
+  background-size 2px
+  @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi)
+    background-image url(/images/old-school-scroll/bg-scrollbar-track%402x.png)
+
+.old-school-scroll::-webkit-scrollbar-thumb
+body::-webkit-scrollbar-thumb
+  background-color silver
+  border-left ridge 2px #fff
+  border-top ridge 2px #fff
+  border-right ridge 2px grey
+  border-bottom ridge 2px grey
+
+.old-school-scroll::-webkit-scrollbar-button:horizontal:end:increment,
+.old-school-scroll::-webkit-scrollbar-button:horizontal:start:decrement,
+.old-school-scroll::-webkit-scrollbar-button:vertical:end:increment,
+.old-school-scroll::-webkit-scrollbar-button:vertical:start:decrement
+body::-webkit-scrollbar-button:horizontal:end:increment
+body::-webkit-scrollbar-button:horizontal:start:decrement
+body::-webkit-scrollbar-button:vertical:end:increment
+body::-webkit-scrollbar-button:vertical:start:decrement
+  background-color silver
+  border-left ridge 2px #fff
+  border-top ridge 2px #fff
+  border-right ridge 2px grey
+  border-bottom ridge 2px grey
+  width 21px
+  height 21px
+  display block
+
+.old-school-scroll::-webkit-scrollbar-button:vertical:end:increment
+body::-webkit-scrollbar-button:vertical:end:increment
+  background-image url(/images/old-school-scroll/sprite-old-school-scroll.png)
+  background-position 0 0
+  width 17px
+  height 22px
+  @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi)
+    background-image url(/images/old-school-scroll/sprite-old-school-scroll-2x.png)
+    background-size 70px 18px
+
+.old-school-scroll::-webkit-scrollbar-button:vertical:start:decrement
+body::-webkit-scrollbar-button:vertical:start:decrement
+  background-image url(/images/old-school-scroll/sprite-old-school-scroll.png)
+  background-position -17px 0
+  width 17px
+  height 22px
+  @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi)
+    background-image url(/images/old-school-scroll/sprite-old-school-scroll-2x.png)
+    background-size 70px 18px
+
+.old-school-scroll::-webkit-scrollbar-button:horizontal:end:increment
+body::-webkit-scrollbar-button:horizontal:end:increment
+  background-image url(/images/old-school-scroll/sprite-old-school-scroll.png)
+  background-position -52px 0
+  width 18px
+  height 17px
+  height 22px
+  @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi)
+    background-image url(/images/old-school-scroll/sprite-old-school-scroll-2x.png)
+    background-size 70px 18px
+
+.old-school-scroll::-webkit-scrollbar-button:horizontal:start:decrement
+body::-webkit-scrollbar-button:horizontal:start:decrement
+  background-image url(/images/old-school-scroll/sprite-old-school-scroll.png)
+  background-position -34px 0
+  width 18px
+  height 17px
+  height 22px
+  @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi)
+    background-image url(/images/old-school-scroll/sprite-old-school-scroll-2x.png)
+    background-size 70px 18px

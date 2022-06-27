@@ -1,0 +1,5 @@
+{% if page.additional_script %}
+  {% for js in page.additional_script %}
+    <script src="{{ js }}{% if site.debug %}?{{ site.time | date: '%s' }}{% endif %}"></script>
+  {% endfor %}
+{% endif %}

@@ -1,0 +1,38 @@
+<div id="code-block" style="display: none;">
+  <hr />
+  <div class="control-group">
+    <label class="control-label">附加程式碼</label>
+    <div id="code-editor" class="code-editor"></div>
+    <input type="hidden" name="code" id="code" value="" />
+    <script>
+      $(function() {
+        var code = ace.edit('code-editor');
+        var default_value = '';
+        code.setTheme("ace/theme/gob");
+        code.getSession().setMode("ace/mode/html");
+        code.getSession().setTabSize(2);
+        code.getSession().setUseSoftTabs(true);
+        code.getSession().setUseWrapMode(true);
+        code.setValue(default_value);
+        $('#code').val(code.getValue());
+        code.getSession().on('change', function(e) {
+          var html = code.getValue();
+          $('#code').val(html);
+        });
+      });
+    </script>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="code_language">Language</label>
+    <div class="controls">
+      <select id="code_language"></select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="code_theme">Theme</label>
+    <div class="controls">
+      <select id="code_theme"></select>
+    </div>
+  </div>
+  <hr />
+</div>

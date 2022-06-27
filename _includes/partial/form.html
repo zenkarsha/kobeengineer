@@ -1,0 +1,25 @@
+<div class="well">
+  <div class="alert alert-block">
+    <img class="pull-left" style="margin-top: -4px" src="/images/old/under-construction.gif" width="80">
+    <h4 class="alert-heading">!!! IMPORTANT !!!</h4>
+    <p>系統目前還在測試中，如有發現bug請用本版 <a style="background: black;" href="https://github.com/zenkarsha/kobeengineer/issues">GitHub issue</a> 回報，或是於 <a style="background: black;" href="https://www.facebook.com/111159301638412">臉書私訊</a> 回報，感謝<br /></p>
+  </div>
+  {% include partial/guest-login-block.html %}
+  {% include partial/user-reauth-block.html %}
+  {% if site.disable_form %}
+    <div class="alert alert-block alert-danger verified-user-view">
+      <img class="pull-left" style="margin-top: -4px" src="/images/old/under-construction.gif" width="80">
+      <h4 class="alert-heading">系統暫停接受發文</h4>
+      <p>因系統狀況不穩，暫時無法發布文章，目前暫時不接受發文<br /></p>
+    </div>
+  {% else %}
+    {% include partial/submit-form.html %}
+  {% endif %}
+  <div class="alert alert-block" id="publishing-progress">
+    <h4 class="alert-heading">Publishing, please wait...</h4>
+    <br />
+    <div class="progress progress-danger progress-striped active">
+      <div class="bar" style="width: 87%"></div>
+    </div>
+  </div>
+</div>

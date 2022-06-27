@@ -1,0 +1,11 @@
+---
+layout: base
+---
+
+{% include header.html %}
+{% include partial/page-loading-progress.html %}
+<div class="container" id="page">
+  {{ content }}
+</div>
+{% include footer.html %}
+{% include modal/login-modal.html %}

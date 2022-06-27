@@ -1,0 +1,43 @@
+
+<form class="form user-view" id="submit-form">
+  <fieldset>
+    <legend>
+      <img src="/images/old/hacker.gif">
+      Create a new Post
+    </legend>
+    <div class="control-group">
+      <label class="control-label" for="type">發文類型</label>
+      <div class="controls">
+        <select id="type">
+          <option value="text">純文字或連結</option>
+          <option value="image">文字圖</option>
+          <option value="code">程式碼</option>
+        </select>
+      </div>
+    </div>
+    <div class="control-group" id="content-block">
+      <label class="control-label" for="content">發文內容 (Max: 1024)</label>
+      <div class="controls">
+        <textarea id="content" placeholder="你今天都在靠北些什麼？"></textarea>
+      </div>
+    </div>
+    {% include partial/form-image-config-block.html %}
+    {% include partial/form-code-editor-block.html %}
+    <div class="control-group">
+      <label class="control-label" for="hashtag">附加標籤 (optional)</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="hashtag" placeholder="E.g. #甜甜香草巧克力熊貓 #肝">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="reply_to">回覆給特定發文 (optional)</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="reply_to" placeholder="請輸入回覆文章的ID">
+      </div>
+    </div>
+    {% include partial/form-license.html %}
+    <div class="form-actions">
+      <button type="button" class="btn btn-primary btn-large btn-block" id="button-submit">Submit Post</button>
+    </div>
+  </fieldset>
+</form>

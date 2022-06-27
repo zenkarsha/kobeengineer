@@ -1,0 +1,67 @@
+#==============================================================
+# Debug mode
+#==============================================================
+localhost: http://localhost:3000
+debug : true
+# debug : false
+
+
+#==============================================================
+# Maintain mode
+#==============================================================
+# maintain : true
+maintain : false
+
+
+#==============================================================
+# Disable Form
+#==============================================================
+# disable_form : true
+disable_form : false
+
+
+#==============================================================
+# Administator info
+#==============================================================
+admin_name: 骨灰級版主
+admin_email: bmooooo.dev@gmail.com
+
+
+#==============================================================
+# Site settings
+#==============================================================
+site_name         : 靠北工程師 KOBEENGINEER - 測試用
+site_title        : 靠北工程師 - 測試用
+site_description  : MAKE ENGINEER GREAT AGAIN
+site_keywords     : code,hack,programmer,肝臟,加班,無薪假
+site_url          : https://kobeengineer.unlink.men
+og_type           : website
+og_image          : https://kobeengineer.unlink.men/images/fb.jpg
+
+
+#==============================================================
+# Facebook APP
+#==============================================================
+fb_app_id: 1263435920858243
+fb_app_version: v14.0
+
+
+#==============================================================
+# Build exclude
+#==============================================================
+exclude:
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - node_modules
+  - assets
+  - vue
+
+
+#==============================================================
+# Html compress config
+#==============================================================
+compress_html:
+  clippings: all
+

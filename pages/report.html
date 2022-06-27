@@ -1,0 +1,23 @@
+---
+layout: default
+layout: default
+permalink: /report/
+page_title: Report shit post
+additional_script:
+  - /js/page/report.js
+---
+
+<div class="row">
+  <div class="span8 offset2">
+    <div class="alert alert-block alert-danger">
+      <img class="pull-left" style="margin-top: -18px" src="/images/old/drudgesiren.gif" width="80">
+      <h4 class="alert-heading">!!! 本頁面僅供舉報惡意發文 !!!</h4>
+      <h4 class="alert-heading">!!! 如不檢舉請立刻關閉本頁面 !!!</h4>
+    </div>
+    <div id="post"></div>
+    <div id="post-report">
+      {% include partial/report-guest-login-block.html %}
+      {% include partial/report-button-block.html %}
+    </div>
+  </div>
+</div>

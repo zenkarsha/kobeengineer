@@ -1,0 +1,36 @@
+#page
+.page-loading-progress
+  min-height 60vh
+
+#page
+  display none
+.guest-view
+  display none
+.user-view
+  display none
+.verified-user-view
+  display none
+
+.guest
+.user
+  #page
+    display block
+  .page-loading-progress
+    display none
+
+.guest
+  .guest-view
+    display block
+  .user-view
+    display none
+
+.user
+  .guest-view
+    display none
+  .user-view
+    display block
+  &.verified
+    .verified-user-view
+      display block
+    .hide-verified-user-view
+      display none

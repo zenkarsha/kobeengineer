@@ -1,0 +1,30 @@
+---
+layout: default
+layout: default
+permalink: /feed/
+page_title: Feed
+header_image: chateo.gif
+additional_script:
+  - /js/page/feed.js
+---
+
+<div class="row">
+  <div class="span12">
+    {% include partial/page-header.html %}
+  </div>
+</div>
+<div class="row">
+  <div class="span3">
+    <div class="well" style="padding: 8px 0;">
+      <ul class="nav nav-list" id="feed-nav"></ul>
+      <ul class="nav nav-list">
+        <li class="nav-header">More</li>
+        <li><a href="/feed/authors/">Public authors</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="span9">
+    <div id="feed"></div>
+    {% include partial/loading-progress.html %}
+  </div>
+</div>
