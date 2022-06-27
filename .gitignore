@@ -1,4 +1,7 @@
 .coffeescript-cache/
+.jekyll-cache/
+.DS_Store
 _site/
 node_modules/
+package-lock.json
 yarn.lock
